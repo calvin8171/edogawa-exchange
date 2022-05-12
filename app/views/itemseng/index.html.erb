@@ -1,63 +1,60 @@
-<%= render "shared/header" %>
+<%= render "shared/headereng" %>
 <div class='main'>
 
   <div class='title-contents'>
     <h2 class='service-title'>
-      地元の人と友達になりませんか？
+      Want to make local friends?
     </h2>
     <p class='service-explain'>
-      不要なものを捨てるのではなく
+      You don't need ≠ Others don't want
     </p>
     <p class='service-explain'>
-      地域で必要としている人にあげたり交換しませんか？
+      Make friends in your community by giving away or exchange! 
     </p>
     <%= image_tag "helping-each-other.png", class:"title-contents" %>
 
   <div class='select-reason-contents'>
     <h2 class='title'>
-      Edogawa Exchangeを利用するメリット
+      Why Edogawa Exchange?
     </h2>
     <ul class='reason-lists'>
       <li class='list'>
         <%= image_tag "2mins.png", class:"list-pict" %>
         <span class='reason-list-number'>1</span>
         <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>2分</span>
-          で出品完了
+          <span class='reason-list-blue-text'>Just 2 minutes </span>
         </h3>
         <p class='reason-list-description'>
-          数項目記入すれば完了！
+          Fill in a few lines & ready to go!
         </p>
       </li>
       <li class='list'>
         <%= image_tag "furima-intro03.png", class:"list-pict" %>
         <span class='reason-list-number'>2</span>
         <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>シンプル</span>
-          な使い方
+          <span class='reason-list-blue-text'>Easy to use</span>
         </h3>
         <p class='reason-list-description'>
-          検索も交換もスムーズ！
+          Search and exchange with one click!  
         </p>
       </li>
       <li class='list'>
         <%= image_tag "freeofcharge.png", class:"list-pict" %>
         <span class='reason-list-number'>3</span>
         <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>手数料</span>
-          0円！
+          <span class='reason-list-blue-text'>It's free</span>
         </h3>
         <p class='reason-list-description'>
-          手数料・追加料金なし！
+          No surchage and additional cost!
       </li>
       <li class='list'>
         <%= image_tag "neighborhood.png", class:"list-pict" %>
         <span class='reason-list-number'>4</span>
         <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>地域への貢献</span>
+          <span class='reason-list-blue-text'>For your community</span>
         </h3>
         <p class='reason-list-description'>
-          もったいないをなくそう！
+          Give back to your community & reduce waste!
         </p>
       </li>
     </ul>
@@ -67,22 +64,19 @@
     <h2 class='ad-title'>
     </h2>
     <p class='ad-explain'>
-      外国人にも使いやすいように
+      User friendly setting for foreigners
     </p>
     <p class='ad-explain'>
-      英語でも使用できるようにしています。
-    </p>
-    <p class='ad-explain'>
-      今日から地域で英語を話す方々とつながってみませんか。
+      Get connected with local English speakers now! 
     </p>
     <%= image_tag "groupofpeople.png", class:"ad-contents" %>
   </div>
 
   <%# 商品一覧 %>
   <div class='item-contents'>
-    <h2 class='title'>新着情報</h2>
+    <h2 class='title'>New items</h2>
     <div class="subtitle" >
-      無料で差し上げます！
+      Find free treasures here!
     </div>
     <ul class='item-lists'>
 
@@ -94,10 +88,10 @@
         </div>
         <div class='item-info'>
           <h3 class='item-name'>
-            <%= "マットレス" %>
+            <%= "Mattress" %>
           </h3>
           <div class='item-detail'>
-            <span><%= "出品者" %><br><%= "市区町村" %></span>
+            <span><%= "Owner" %><br><%= "Location" %></span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
@@ -115,10 +109,10 @@
         <%= image_tag "strawberry_sandwish.png", class: "item-img" %>
         <div class='item-info'>
           <h3 class='item-name'>
-            いちごのサンドイッチ
+            Strawberry Sandwich
           </h3>
           <div class='item-detail'>
-            <span>出品者<br>市区町村</span>
+            <span>Owner<br>Location</span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
@@ -134,7 +128,7 @@
   <%# /商品一覧 %>
 </div>
 <%= link_to('#', class: 'purchase-btn') do %>
-  <span class='purchase-btn-text'>出品する</span>
+  <span class='purchase-btn-text'>LIST</span>
   <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
 <% end %>
-<%= render "shared/footer" %>
+<%= render "shared/footereng" %>
