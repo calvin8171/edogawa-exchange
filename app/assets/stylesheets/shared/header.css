@@ -37,7 +37,7 @@
   width: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: #3ccace;
+  background-color: #333fff;
   padding: 8px;
 }
 
@@ -78,13 +78,19 @@
 }
 
 
+.english-page {
+  text-decoration: none;
+  margin-right: 3.5vw;
+  color: #333333;
+  font-weight: bold;
+}
+
 .user-nickname {
   text-decoration: none;
   margin-right: 3vw;
   color: #333333;
   font-weight: bold;
 }
-
 
 .logout {
   text-decoration: none;
@@ -93,7 +99,6 @@
 
 .login {
   text-decoration: none;
-  line-height: 32px;
   margin-right: 3vw;
   color: #333333;
 }
