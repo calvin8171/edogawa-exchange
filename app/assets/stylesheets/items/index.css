@@ -9,17 +9,15 @@ a {
 /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
-  background-image: image-url('furima-header01.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 5vh 15vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  color: #333333;
 }
 
 .service-title {
@@ -34,15 +32,6 @@ a {
 .store-btn {
   display: flex;
   margin-top: 24px;
-}
-
-.apple-btn {
-  margin-right: 1vw;
-  height: 9vh;
-}
-
-.google-btn {
-  height: 9vh;
 }
 
 /* //画面上部の「人生を変えるフリマアプリ」帯部分 */
@@ -62,9 +51,9 @@ a {
 
 .select-reason-contents>.title::after {
   content: '';
-  width: 70px;
+  width: 90px;
   height: 4px;
-  background-color: #3ccace;
+  background-color: #2d4dc4;
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -73,7 +62,7 @@ a {
 
 .reason-lists {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -88,6 +77,7 @@ a {
 .list-pict {
   margin-bottom: 20px;
   width: 100%;
+  height: 53%;
 }
 
 .reason-list-number {
@@ -99,7 +89,7 @@ a {
   font-size: 30px;
   text-align: center;
   line-height: 60px;
-  background-color: #3ccace;
+  background-color: #2d4dc4;
   color: #fff;
 }
 
@@ -110,12 +100,12 @@ a {
 }
 
 .reason-list-blue-text {
-  color: #3ccace;
+  color: #2d4dc4;
 }
 
 .reason-list-description {
   font-size: 18px;
-  margin-top: 20px;
+  margin: 10px 0px 20px;
 }
 
 /* //FURIMAが選ばれる3つの理由部分 */
@@ -124,17 +114,15 @@ a {
 /* 画面中央の「会員数日本一位」帯部分*/
 .ad-contents {
   width: 100vw;
-  background-image: image-url('furima-header02.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 5vh 15vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  color: #333333;
 }
 
 .ad-title {
@@ -143,22 +131,14 @@ a {
 }
 
 .ad-explain {
-  font-size: 2.5vh;
+  font-size: 4vh;
   line-height: 30px;
+  margin-bottom: 2vh;
 }
 
 .store-btn {
   display: flex;
   margin-top: 24px;
-}
-
-.apple-btn {
-  margin-right: 1vw;
-  height: 9vh;
-}
-
-.google-btn {
-  height: 9vh;
 }
 
 /* //画面中央の「会員数日本一位」帯部分 */
@@ -233,7 +213,7 @@ a {
   font-size: 3vh;
   margin: 1vh 0;
   text-decoration: none;
-  color: #3ccace;
+  color: #2d4dc4;
   font-weight: bold;
 }
 
@@ -260,22 +240,6 @@ a {
   height: 33vh;
 }
 
-.sold-out {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  background-color: crimson;
-  transform: skewY(-10deg);
-}
-
-.sold-out>span {
-  color: #FFF;
-  font-size: 45px;
-  font: bold;
-}
-
-
 .item-info {
   background-color: #FFF;
   color: black;
@@ -286,12 +250,11 @@ a {
   font-size: 2.5vh;
 }
 
-.item-price {
+.item-detail {
   font-size: 1.5vh;
   display: flex;
   justify-content: space-between;
 }
-
 
 .star-btn {
   display: flex;
