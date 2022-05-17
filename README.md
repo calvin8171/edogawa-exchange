@@ -7,10 +7,10 @@
 | nickname           | string              | null: false               |
 | email              | string              | null: false, unique: true |
 | encrypted_password | string              | null: false               |
-| surname_kana       | string              | null: false               |
 | name_kana          | string              | null: false               |
-| surname_english    | string              | null: false               |
+| surname_kana       | string              | null: false               |
 | name_english       | string              | null: false               |
+| surname_english    | string              | null: false               |
 
 ### Association
 

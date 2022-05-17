@@ -11,7 +11,7 @@
 .form-wrap {
   width: 50%;
   background-color: white;
-  padding-bottom: 70px;
+  padding-bottom: 135px;
 }
 
 .form-header {
@@ -142,13 +142,14 @@
   margin: 0 auto;
 }
 
-.register-red-btn {
+.register-blue-btn {
   width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background: #355ae5;
+  border: 1px solid #355ae5;
   color: #fff;
   line-height: 48px;
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: bold;
   cursor: pointer;
 }
 

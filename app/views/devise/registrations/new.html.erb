@@ -15,20 +15,20 @@
     <div class='form-text-wrap'>
       <label class="form-text">Nickname</label>
     </div>
-    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"Like: Herry", maxlength:"40" %>
+    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"", maxlength:"40" %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">E-mail</label>
     </div>
-    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"Eligible for both PC & mobile e-mails", autofocus: true %>
+    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"", autofocus: true %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">Password</label>
     </div>
     <%= f.password_field :password, class:"input-default", id:"password", placeholder:"Minimum 6 characters required" %>
-    <p class='info-text'>※Please include letters and numbers</p>
+    <p class='info-text'>※Please include both letters and numbers</p>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
@@ -38,25 +38,25 @@
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
-      <label class="form-text">Name(Katagana)</label>
+      <label class="form-text">Name (Katagana)</label>
     </div>
     <div class='input-name-wrap'>
-      <%= f.text_area :surname_kana, class:"input-name", id:"last-name", placeholder:"Like: ロバートソン" %>
-      <%= f.text_area :name_kana, class:"input-name", id:"first-name", placeholder:"Like: ポール" %>
+      <%= f.text_area :name_kana, class:"input-name", id:"first-name", placeholder:"ex. ポール" %>
+      <%= f.text_area :surname_kana, class:"input-name", id:"last-name", placeholder:"ロバートソン" %>
     </div>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
-      <label class="form-text">Name(English)</label>
+      <label class="form-text">Name (English)</label>
     </div>
     <div class='input-name-wrap'>
-      <%= f.text_area :surname_english, class:"input-name", id:"last-name-eng", placeholder:"Like: Robertson" %>
-      <%= f.text_area :name_english, class:"input-name", id:"first-name-eng", placeholder:"Like: Paul" %>
+      <%= f.text_area :name_english, class:"input-name", id:"first-name-eng", placeholder:"ex. Paul" %>
+      <%= f.text_area :surname_english, class:"input-name", id:"last-name-eng", placeholder:"Robertson" %>
     </div>
   </div>
   <div class="form-group">
     <h2 class='form-bottom-text'>
-      By creating an account, you agree to Edogawa-exchange's
+      By creating an account, you agree to Edogawa Exchange's
       <span>Conditions of Use</span>
     </h2>
   </div>
