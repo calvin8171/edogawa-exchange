@@ -14,18 +14,19 @@
 
 ### Association
 
-* has_many :items
+* has_many :eng_items
 * has_many :messages
 
-## items table
+## eng_items table
 
 | Column                              | Type       | Options                        |
 |-------------------------------------|------------|--------------------------------|
-| good_name                           | string     | null: false                    |
-| good_description                    | text       | null: false                    |
+| item_name                           | string     | null: false                    |
+| description                         | text       | null: false                    |
 | category_id                         | integer    | null: false                    |
-| good_condition_id                   | integer    | null: false                    |
-| price                               | integer    |                                |
+| condition_id                        | integer    | null: false                    |
+| area_id                             | integer    | null: false                    |
+| price                               | integer    | null: false                    |
 | user                                | references | null: false, foreign_key: true |
 
 ### Association
@@ -44,4 +45,4 @@
 ### Association
 
 - belongs_to :user
-- belongs_to :item
+- belongs_to :eng_item

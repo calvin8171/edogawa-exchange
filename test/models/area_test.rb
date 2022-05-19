@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ItemsengControllerTest < ActionDispatch::IntegrationTest
+class AreaTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

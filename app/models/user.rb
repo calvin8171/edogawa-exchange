@@ -4,9 +4,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   
+  has_many :eng_items
+  
   validates :nickname, presence: true
-  validates :surname_kana, presence: true, format: {with: /\A[ァ-ヶー－]+\z/ }
   validates :name_kana, presence: true, format: {with: /\A[ァ-ヶー－]+\z/ }
-  validates :surname_english, presence: true
+  validates :surname_kana, presence: true, format: {with: /\A[ァ-ヶー－]+\z/ }
   validates :name_english, presence: true
+  validates :surname_english, presence: true
 end
