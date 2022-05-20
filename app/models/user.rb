@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
   has_many :eng_items
+  has_many :comments
   
   validates :nickname, presence: true
   validates :name_kana, presence: true, format: {with: /\A[ァ-ヶー－]+\z/ }

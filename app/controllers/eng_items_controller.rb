@@ -24,6 +24,8 @@ class EngItemsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @eng_item.comments.includes(:user)
   end
 
   def update

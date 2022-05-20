@@ -34,13 +34,13 @@
 - belongs_to :user
 - has_many :messages
 
-## messages table
+## comments table
 
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| content | string     |                                |
-| user    | references | null: false, foreign_key: true |
-| room    | references | null: false, foreign_key: true |
+| Column   | Type       | Options                        |
+| -------- | ---------- | ------------------------------ |
+| content  | text       |                                |
+| user     | references | null: false, foreign_key: true |
+| eng_item | references | null: false, foreign_key: true |
 
 ### Association
 

@@ -5,6 +5,7 @@ class EngItem < ApplicationRecord
   belongs_to :condition
   belongs_to :area
   has_one_attached :image
+  has_many :comments
 
   validates :image, presence: true
   validates :item_name, presence: true
