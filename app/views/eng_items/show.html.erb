@@ -1,0 +1,85 @@
+<%= render "shared/eng_header" %>
+
+<%# 商品の概要 %>
+<div class="item-show">
+  <div class="item-box">
+    <h2 class="name">
+      <%= @eng_item.item_name %>
+    </h2>
+    <div class="item-img-content">
+      <%= image_tag @eng_item.image ,class:"item-box-img" %>
+    </div>
+    <div class="item-price-box">
+      <span class="item-price">
+        ¥ <%= @eng_item.price %>
+      </span>
+    </div>
+    <div class="item-explain-box">
+      <span><%= @eng_item.description %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">Owner</th>
+          <td class="detail-value"><%= @eng_item.user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">Category</th>
+          <td class="detail-value"><%= @eng_item.category.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">Condition</th>
+          <td class="detail-value"><%= @eng_item.condition.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">Area</th>
+          <td class="detail-value"><%= @eng_item.area.name %></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="option">
+      <% if user_signed_in? %>
+        <% if current_user.id == @eng_item.user_id %>
+          <div class="edit-btn">
+            <%= link_to "Edit", edit_eng_item_path(@eng_item.id), method: :get, width:"20",height:"20"%>
+          </div>
+          <div class="delete-btn">
+            <%= link_to "Delete", eng_item_path(@eng_item.id), method: :delete, width:"20",height:"20"%>
+          </div>
+        <% else %>
+          <div class="favorite-btn">
+            <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+            <span>Like</span>
+          </div>
+          <div class="report-btn">
+            <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
+            <span>Report</span>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="comment-box">
+    <form>
+      <textarea class="comment-text"></textarea>
+      <p class="comment-warn">
+        相手のことを考え丁寧なコメントを心がけましょう。
+        <br>
+        不快な言葉遣いなどは利用制限や退会処分となることがあります。
+      </p>
+      <button type="submit" class="comment-btn">
+        <span>Comment<span>
+      </button>
+    </form>
+  </div>
+  <div class="links">
+    <a href="#" class="change-item-btn">
+      ＜ Before
+    </a>
+    <a href="#" class="change-item-btn">
+      Next ＞
+    </a>
+  </div>
+  <a href="#" class="another-item">Click for more <%= @eng_item.category.name %> items</a>
+</div>
