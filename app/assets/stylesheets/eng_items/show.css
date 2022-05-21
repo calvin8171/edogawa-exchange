@@ -90,7 +90,6 @@
   border-radius: 40px;
   width: 15vw;
   min-width: 200px;
-  color: rgb(249, 75, 0);
   border: 2px solid #355ae5;
   font-weight: bold;
   display: flex;
@@ -99,18 +98,26 @@
   margin-right: 20px;
 }
 
+.edit-btn > a:visited {
+  color:#355ae5;
+}
+
 .delete-btn {
   border-radius: 40px;
   width: 15vw;
   min-width: 200px;
   padding: 1vh 0;
-  color: black;
   font-weight: bold;
   border: 2px solid #aaa;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.delete-btn > a:visited {
+  color:#666;
+}
+
 
 .favorite-btn {
   border-radius: 40px;
@@ -160,6 +167,7 @@
   padding: 10px;
   border: solid 2px #dedede;
   resize: none;
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", "Osaka", "Meiryo", "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
 }
 
 .comment-box-inner {
@@ -167,6 +175,7 @@
   font-size: 14px;
   margin: 10px 0px;
   text-align: left;
+  margin: 10px;
 }
 
 .comment-btn {
@@ -178,7 +187,7 @@
   min-width: 150px;
   font-size: 18px;
   border-radius: 100px;
-  margin-bottom: 2vh;
+  margin: 20px auto;
 }
 
 .comments {
@@ -215,4 +224,26 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;
+}
+
+.comment-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #666;
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", "Osaka", "Meiryo", "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+}
+
+.comment-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.57;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  color: #666;
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", "Osaka", "Meiryo", "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+}
+
+.comment-username {
+  color: #355ae5;
+  font-weight: bold;
 }

@@ -63,23 +63,18 @@
   <div class="comment-box-flame">
     <% if user_signed_in? %>
       <%= form_with(model: [@eng_item, @comment], local: true) do |form| %>
-         <%= form.text_area :content, class:"comment-text", placeholder: "", rows: "3" %>
-         <p class="comment-box-inner">
-           相手のことを考え丁寧なコメントを心がけましょう。
-           <br>
-           不快な言葉遣いなどは利用制限や退会処分となることがあります。
-         </p>
+         <%= form.text_area :content, class:"comment-text", placeholder: "Spam and personal attacks on other posters/commenters will be removed", rows: "3" %>
          <%= form.submit "Comment", class:"comment-btn" %>
       <% end %>
     <% end %>
     <div class="comment-box-inner">
-      <h1>Comment List</h1>
+      <h1 class="comment-title">< Comment List ></h1>
       <% @comments.each do |comment| %>
-        <p>
-          <%= comment.user.nickname %> :
+        <p class="comment-item">
+          <span class="comment-username"><%= comment.user.nickname %></span> :
           <%= comment.content %>
         </p>
-      <% end %>
+     <% end %>
     </div>
   </div>
 

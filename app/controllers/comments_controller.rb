@@ -1,8 +1,8 @@
 class CommentsController < ApplicationController
 
   def create
-    comment = Comment.create(comment_params)
-    redirect_to "/eng_items/#{comment.eng_item.id}"
+    @comment = Comment.create(comment_params)
+    redirect_to "/eng_items/#{@comment.eng_item.id}"
   end
 
   private
