@@ -118,7 +118,6 @@
   color:#666;
 }
 
-
 .favorite-btn {
   border-radius: 40px;
   width: 15vw;
@@ -246,4 +245,20 @@
 .comment-username {
   color: #355ae5;
   font-weight: bold;
+}
+
+.main-page-btn-contents {
+  width: 100%;
+  text-align: center;
+  margin: 35px auto;
+}
+   
+.show-back-btn {
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+  padding: 15px 70px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 100px;
 }

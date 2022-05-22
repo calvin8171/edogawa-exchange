@@ -180,12 +180,12 @@
 /* /注意書き */
 
 /* 下部ボタン */
-.sell-btn-contents {
+.post-btn-contents {
   width: 100%;
   text-align: center;
 }
 
-.sell-btn {
+.post-btn {
   background: #355ae5;
   border: 1px solid #355ae5;
   color: #fff;
