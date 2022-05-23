@@ -15,7 +15,7 @@
 ### Association
 
 * has_many :eng_items
-* has_many :messages
+* has_many :comments
 
 ## eng_items table
 
@@ -32,7 +32,7 @@
 ### Association
 
 - belongs_to :user
-- has_many :messages
+- has_many :comments
 
 ## comments table
 
