@@ -5,7 +5,7 @@ a {
 .main {
 }
 
-/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
+/* header part*/
 .title-contents {
   width: 100vw;
   background-size: cover;
@@ -33,9 +33,9 @@ a {
   margin-top: 24px;
 }
 
-/* //画面上部の「人生を変えるフリマアプリ」帯部分 */
+/* header part*/
 
-/* FURIMAが選ばれる3つの理由部分 */
+/* edogawa-exchangeが選ばれる4つの理由部分 */
 .select-reason-contents {
   padding: 5vh 15vw;
 }
@@ -107,10 +107,8 @@ a {
   margin: 10px 0px 20px;
 }
 
-/* //FURIMAが選ばれる3つの理由部分 */
+/* edogawa-exchangeが選ばれる4つの理由部分 */
 
-
-/* 画面中央の「会員数日本一位」帯部分*/
 .ad-contents {
   width: 100vw;
   background-size: cover;
